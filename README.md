@@ -8,16 +8,20 @@ This project contains scripts that deploys high-availability web app using Cloud
 
 #### Create stack for Networking infrastructure
 
-`./project_starter/create.sh udagraminfra final-project-starter.yml final_project_params.json`
+`./project_starter/create.sh udagraminfra networking-template.yml networking-params.json`
 
 #### Update stack for Networking infrastructure
 
-`./project_starter/update.sh udagraminfra final-project-starter.yml final_project_params.json`
+`./project_starter/update.sh udagraminfra networking-template.yml networking-params.json`
 
 #### Create stack for Servers and Load balancers
 
-`./project_starter/create.sh udagramserver final_project_server.yml final_project_server.json`
+`./project_starter/create.sh udagramserver load-balancer-template.yml load-balancer-params.json`
 
 #### Update stack for Servers and Load balancers
 
-`./project_starter/update.sh udagramserver final_project_server.yml final_project_server.json`
+`./project_starter/update.sh udagramserver load-balancer-template.yml load-balancer-params.json`
+
+#### Load balancer URL
+
+`http://abugi-udagram-udacitylb-2084831887.us-east-1.elb.amazonaws.com/`
