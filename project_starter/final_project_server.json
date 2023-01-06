@@ -5,7 +5,7 @@
 	},
 	{
 		"ParameterKey": "Ec2ImageId",
-		"ParameterValue": "ami-0b5eea76982371e91"
+		"ParameterValue": "ami-06878d265978313ca"
 	},
 	{
 		"ParameterKey": "SshKeyPairName",
@@ -21,6 +21,6 @@
 	},
 	{
 		"ParameterKey": "Ec2DiskName",
-		"ParameterValue": "/dev/sdk"
+		"ParameterValue": "/dev/sda1"
 	}
 ]
