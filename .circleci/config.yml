@@ -34,11 +34,11 @@ jobs:
       - run: cat ~/output.txt
       - print_pipeline_id:
           id: << pipeline.id >>
-  print_world:
+  print_hello_world:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      - run: echo world!
+      - run: echo Hello world!
       - run:
           name: "echo an env var that is part of our project"
           command: |
@@ -58,8 +58,7 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
-      - print_hello
-      - print_world:
+      - print_hello_world:
           requires:
             - print_hello
       - save_hello_world_output
